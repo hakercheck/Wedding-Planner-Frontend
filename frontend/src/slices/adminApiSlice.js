@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const ADMIN_URL = "/api/admin";
+const ADMIN_URL = `${process.env.REACT_APP_BACKEND_URL}/api/admin`;
 
 export const adminApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({

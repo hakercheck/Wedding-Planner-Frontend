@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const ITEMS_URL = "/api/vendor";
+const ITEMS_URL = `${process.env.REACT_APP_BACKEND_URL}/api/vendor`;
 
 export const itemApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({

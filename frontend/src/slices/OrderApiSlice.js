@@ -1,5 +1,5 @@
 import {apiSlice} from "./apiSlice";
-const ORDER_URL = "/api/order";
+const ORDER_URL = `${process.env.REACT_APP_BACKEND_URL}/api/order`;
 
 export const orderApiSlice = apiSlice.injectEndpoints({
     endpoints: (builder) => ({

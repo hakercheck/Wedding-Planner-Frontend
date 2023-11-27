@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const VENDOR_SELECT_URL = "/api/vendorSelect";
+const VENDOR_SELECT_URL = `${process.env.REACT_APP_BACKEND_URL}/api/vendorSelect`;
 
 export const vendorSelectApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({

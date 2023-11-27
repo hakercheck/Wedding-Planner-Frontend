@@ -1,5 +1,5 @@
 import { apiSlice } from "./apiSlice";
-const VENDOR_DISPLAY_URL = "/api/vendorDisplay";
+const VENDOR_DISPLAY_URL = `${process.env.REACT_APP_BACKEND_URL}/api/vendorDisplay`;
 
 export const vendorDisplayApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
